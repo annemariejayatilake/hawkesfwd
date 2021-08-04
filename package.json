@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anne-Marie",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annemariejayatilake/hawkesfwd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/annemariejayatilake/hawkesfwd/issues"
+  },
+  "homepage": "https://github.com/annemariejayatilake/hawkesfwd#readme"
 }
