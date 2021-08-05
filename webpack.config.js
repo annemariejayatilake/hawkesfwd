@@ -59,7 +59,9 @@ module.exports = {
         }),
         // Reloading for latest changes
         new webpack.HotModuleReplacementPlugin(),
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        })
     ],
     module: {
         rules: [
@@ -72,7 +74,18 @@ module.exports = {
                 },
                 "sass-loader"
                 ]
+            },
+            {
+                test: /\.js$/ ,
+                exclude: /node_modules/ ,
+                use: ['babel-loader']
             }
+        ]
+    },
+    resolve: {
+        extensions: [
+            '.js' ,
+            '.scss'
         ]
     }
 }

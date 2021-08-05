@@ -1,4 +1,11 @@
 import './sass/bootstrap/scss/bootstrap.scss';
 
 
-document.body.innerHTML = "<h1> Hello we appended this! </h1>"
+import React from 'react';
+import ReactDOM  from 'react-dom';   
+import Home from  './pages/home';
+
+ReactDOM.render(
+    <Home></Home>,
+    document.getElementById('root')
+)
