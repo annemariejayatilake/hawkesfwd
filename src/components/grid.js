@@ -5,12 +5,11 @@ render(){
     return (
         <div className="container">
             <div className="row">
-                 <div className="col">
-                        {this.props.dynamicTitle}
-                </div>
-                <div className="col">
-                         Column
-                </div>
+                 {this.props.data.map((item,  index) => {
+                     return <div className ="col-sm" key={index}>
+                            {item}
+                            </div>
+                 })}
             </div>
         </div>
     )

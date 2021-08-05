@@ -8,7 +8,7 @@ render(){
     return (
         <div>
              <Header title="Hipster"></Header>
-             <Grid dynamicTitle={"testing " + myVar}/>
+             <Grid data={["one" , "two" , "three"]}/>
         </div>
     )
 }
