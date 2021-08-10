@@ -1,3 +1,22 @@
 h1{
-    color: red;
+    color: green;
+}
+
+nav{
+    display: flex;
+    div {
+        // Respectively have a value of 1
+        flex-grow: 1;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+        div:first-child {
+            a{
+                color: #333;
+                font-size: 2rem;
+                font-weight: bolder;
+        }
+    }
 }
